@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         body = JSON.parse(body);
-        console.log('body:', body.data.results); // Print the HTML for the Google homepage.
+        console.log('body:', body.data.results);
         if (error) {
             res.json({
                 error
